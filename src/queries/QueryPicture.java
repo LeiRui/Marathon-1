@@ -54,11 +54,11 @@ public class QueryPicture {
             for (int j = 0; j < singleSum; j++) {
                 // 确定这个batch内第i个ck列的单范围查询的描述参数数值
                 double qck_r1_abs = (int)Math.round(getFromDist(dist_start) * (columnIan.xmax_ - columnIan.xmin_) + columnIan.xmin_);
-                double qck_r2_abs = (int)Math.round(qck_r1_abs + getFromDist(dist_length) * (columnIan.xmax_ - columnIan.xmin_) + columnIan.xmin_);
+                double qck_r2_abs = (int)Math.round(qck_r1_abs + getFromDist(dist_length) * (columnIan.xmax_ - columnIan.xmin_));
 //                System.out.println("r1="+qck_r1_abs+" r2="+qck_r2_abs);
 
                 //TODO 记得改！
-//                double qck_r1_abs = 1;
+//                double qck_r1_abs =-1;
 //                double qck_r2_abs = 5.5;
 
 //                int qck_r2_abs = 3163;

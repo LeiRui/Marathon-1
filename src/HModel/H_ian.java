@@ -155,6 +155,7 @@ public class H_ian {
                 break;
         }
         BigDecimal candidate_rows_cnt = totalRowNumber.multiply(new BigDecimal(resP)); // 候选集行数估计
+
         for (int i = qackn+1; i < ckn; i++) {
             resP *= ACKdist.get(i).getPoint(qack_p[i]);
         }
